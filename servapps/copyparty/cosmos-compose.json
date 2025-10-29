@@ -25,12 +25,9 @@
             ],
             "volumes": [
                 {
-                    "source": "./",
+                    "source": "{ServiceName}-config",
                     "target": "/cfg",
-                    "type": "bind",
-                    "bind": {
-                        "selinux": "z"
-                    }
+                    "type": "volume"
                 },
                 {
                     "source": "{Context.FILESHARE_PATH}",
@@ -56,6 +53,12 @@
                 "target": "http://copyparty:3923",
                 "mode": "SERVAPP"
             }]
+        }
+    },
+    "volumes": {
+        "{ServiceName}-config": {
+            "name": "{ServiceName}-config",
+            "driver": "local"
         }
     }
 }
