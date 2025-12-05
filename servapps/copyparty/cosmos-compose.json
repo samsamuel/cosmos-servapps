@@ -4,7 +4,7 @@
             {
                 "name": "FILESHARE_PATH",
                 "label": "Path to your file share folder",
-                "initialValue": "/path/to/your/fileshare/top/folder",
+                "initialValue": "/",
                 "type": "text",
                 "description": "The absolute path to the folder you want to share through copyparty"
             }
@@ -29,12 +29,11 @@
                 "type": "volume"
             },
             {
-                "source": "{FILESHARE_PATH}",
+                "source": "{Context.FILESHARE_PATH}",
                 "target": "/w",
                 "type": "bind"
                 
             }
-            
             ],
             "routes": [{
                 "name": "{ServiceName}",
