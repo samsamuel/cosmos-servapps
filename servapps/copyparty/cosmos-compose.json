@@ -30,7 +30,7 @@
             },
             {
                 "source": "{FILESHARE_PATH}",
-                "target": "{FILESHARE_PATH}",
+                "target": "/w",
                 "type": "bind"
                 
             }
