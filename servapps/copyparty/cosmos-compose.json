@@ -27,7 +27,7 @@
                 "source": "{ServiceName}-config",
                 "target": "/cfg",
                 "type": "volume"
-            }
+            },
             {
                 "source": "{FILESHARE_PATH}",
                 "target": "{FILESHARE_PATH}",
